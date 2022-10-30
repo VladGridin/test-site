@@ -22,7 +22,7 @@ function btn1(){
 	}
 	else {
 		tg.MainButton.setText(`Вы выбрали ${qw*10}л Газа`);
-		item = `Газ ${qw*10}л`;
+		item = `1${qw*10}л`;
 		tg.MainButton.show();
 	}
 };
@@ -32,7 +32,7 @@ function Minus1(){
 		qw--
 		document.getElementById("txt1").innerHTML = `<p class="text">${qw*10}л</p>`;
 		tg.MainButton.setText(`Вы выбрали ${qw*10}л Газа`);
-		item = `Газ ${qw*10}л`;
+		item = `1${qw*10}л`;
 		tg.MainButton.show();
 	}
 	else {
@@ -43,7 +43,7 @@ function Minus1(){
 		}
 		else {
 			tg.MainButton.setText(`Вы выбрали ${qw*10}л Газа`);
-			item = `Газ ${qw*10}л`;
+			item = `1${qw*10}л`;
 			tg.MainButton.show();
 		}
 	}
@@ -53,12 +53,12 @@ function Plus1(){
 		qw++
 		document.getElementById("txt1").innerHTML = `<p class="text">${qw*10}л</p>`;
 		tg.MainButton.setText(`Вы выбрали ${qw*10}л Газа`);
-		item = `Газ ${qw*10}л`;
+		item = `1${qw*10}л`;
 		tg.MainButton.show();
 	}
 	else {
 			tg.MainButton.setText(`Вы выбрали ${qw*10}л Газа`);
-			item = `Газ ${qw*10}л`;
+			item = `1${qw*10}л`;
 			tg.MainButton.show();
 
 		
@@ -73,7 +73,7 @@ function btn2(){
 	}
 	else {
 		tg.MainButton.setText(`Вы выбрали ${we*10}л 95-Евро`);
-		item = `95-Евро ${we*10}л`;
+		item = `2${we*10}л`;
 		tg.MainButton.show();
 	}
 };
@@ -83,7 +83,7 @@ function Minus2(){
 		we--
 		document.getElementById("txt2").innerHTML = `<p class="text">${we*10}л</p>`;
 		tg.MainButton.setText(`Вы выбрали ${we*10}л 95-Евро`);
-		item = `95-Евро ${we*10}л`;
+		item = `2${we*10}л`;
 		tg.MainButton.show();
 	}
 	else {
@@ -94,7 +94,7 @@ function Minus2(){
 		}
 		else {
 			tg.MainButton.setText(`Вы выбрали ${we*10}л 95-Евро`);
-			item = `95-Евро ${we*10}л`;
+			item = `2${we*10}л`;
 			tg.MainButton.show();
 		}
 	}
@@ -104,12 +104,12 @@ function Plus2(){
 		we++
 		document.getElementById("txt2").innerHTML = `<p class="text">${we*10}л</p>`;
 		tg.MainButton.setText(`Вы выбрали ${we*10}л 95-Евро`);
-		item = `95-Евро ${we*10}л`;
+		item = `2${we*10}л`;
 		tg.MainButton.show();
 	}
 	else {
 			tg.MainButton.setText(`Вы выбрали ${we*10}л 95-Евро`);
-			item = `95-Евро ${we*10}л`;
+			item = `2${we*10}л`;
 			tg.MainButton.show();
 		
 	}
@@ -123,7 +123,7 @@ function btn3(){
 	}
 	else {
 		tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Puls`);
-		item = `95-Puls ${er*10}л`;
+		item = `3${er*10}л`;
 		tg.MainButton.show();
 	}
 };
@@ -133,7 +133,7 @@ function Minus3(){
 		er--
 		document.getElementById("txt3").innerHTML = `<p class="text">${er*10}л</p>`;
 		tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Puls`);
-		item = `95-Puls ${er*10}л`;
+		item = `3${er*10}л`;
 		tg.MainButton.show();
 	}
 	else {
@@ -144,7 +144,7 @@ function Minus3(){
 		}
 		else {
 			tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Puls`);
-			item = `95-Puls ${er*10}л`;
+			item = `3${er*10}л`;
 			tg.MainButton.show();
 		}
 	}
@@ -154,12 +154,12 @@ function Plus3(){
 		er++
 		document.getElementById("txt3").innerHTML = `<p class="text">${er*10}л</p>`;
 		tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Puls`);
-		item = `95-Puls ${er*10}л`;
+		item = `3${er*10}л`;
 		tg.MainButton.show();
 	}
 	else {
 			tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Puls`);
-			item = `95-Puls ${er*10}л`;
+			item = `3${er*10}л`;
 			tg.MainButton.show();
 		
 	}
@@ -173,7 +173,7 @@ function btn4(){
 	}
 	else {
 		tg.MainButton.setText(`Вы выбрали ${rt*10}л ДП-Евро`);
-		item = `ДП-Евро ${rt*10}л`;
+		item = `4${rt*10}л`;
 		tg.MainButton.show();
 	}
 };
@@ -183,7 +183,7 @@ function Minus4(){
 		rt--
 		document.getElementById("txt4").innerHTML = `<p class="text">${rt*10}л</p>`;
 		tg.MainButton.setText(`Вы выбрали ${rt*10}л ДП-Евро`);
-		item = `ДП-Евро ${rt*10}л`;
+		item = `4${rt*10}л`;
 		tg.MainButton.show();
 	}
 	else {
@@ -194,7 +194,7 @@ function Minus4(){
 		}
 		else {
 			tg.MainButton.setText(`Вы выбрали ${rt*10}л ДП-Евро`);
-			item = `ДП-Евро ${rt*10}л`;
+			item = `5${rt*10}л`;
 			tg.MainButton.show();
 		}
 	}
@@ -204,7 +204,7 @@ function Plus4(){
 		rt++
 		document.getElementById("txt4").innerHTML = `<p class="text">${rt*10}л</p>`;
 		tg.MainButton.setText(`Вы выбрали ${rt*10}л ДП-Евро`);
-		item = `ДП-Евро ${rt*10}л`;
+		item = `5${rt*10}л`;
 		tg.MainButton.show();
 	}
 	else {
@@ -223,7 +223,7 @@ function btn5(){
 	}
 	else {
 		tg.MainButton.setText(`Вы выбрали ${ty*10}л Дп-pulls`);
-		item = `Дп-pulls ${ty*10}л`;
+		item = `5${ty*10}л`;
 		tg.MainButton.show();
 	}
 };
@@ -233,7 +233,7 @@ function Minus5(){
 		ty--
 		document.getElementById("txt5").innerHTML = `<p class="text">${ty*10}л</p>`;
 		tg.MainButton.setText(`Вы выбрали ${ty*10}л Дп-pulls`);
-		item = `Дп-pulls ${ty*10}л`;
+		item = `5${ty*10}л`;
 		tg.MainButton.show();
 	}
 	else {
@@ -244,7 +244,7 @@ function Minus5(){
 		}
 		else {
 			tg.MainButton.setText(`Вы выбрали ${ty*10}л Дп-pulls`);
-			item = `Дп-pulls ${ty*10}л`;
+			item = `5${ty*10}л`;
 			tg.MainButton.show();
 		}
 	}
@@ -254,12 +254,12 @@ function Plus5(){
 		ty++
 		document.getElementById("txt5").innerHTML = `<p class="text">${ty*10}л</p>`;
 		tg.MainButton.setText(`Вы выбрали ${ty*10}л Дп-pulls`);
-		item = `Дп-pulls ${ty*10}л`;
+		item = `5${ty*10}л`;
 		tg.MainButton.show();
 	}
 	else {
 			tg.MainButton.setText(`Вы выбрали Дп-pulls ${ty*10}л`);
-			item = `Дп-pulls ${ty*10}л`;
+			item = `5${ty*10}л`;
 			tg.MainButton.show();
 		
 	}
