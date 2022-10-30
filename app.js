@@ -24,6 +24,14 @@ var ty = "1"
 function btn1(){
 	document.getElementById("txt1").innerHTML = `<p class="text">${qw*10}л</p>`;
 	document.getElementById("btn_1").innerHTML='<input type="button" onclick="Minus()" value="-" class="btn">' + '<input type="button" onclick="Plus()" value="+" class="btn">';
+		if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Вы выбрали товар 1!");
+		item = `Газ ${qw*10}л`;
+		tg.MainButton.show();
+	}
 };
 
 // btn1.addEventListener("click", function(){
