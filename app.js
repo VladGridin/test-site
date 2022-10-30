@@ -103,13 +103,63 @@ function Plus2(){
 	if (we< 5){
 		we++
 		document.getElementById("txt2").innerHTML = `<p class="text">${we*10}л</p>`;
-		tg.MainButton.setText(`Газ ${we*10}л`);
-		item = `Газ ${we*10}л`;
+		tg.MainButton.setText(`Вы выбрали ${we*10}л 95-Евро`);
+		item = `95-Евро ${we*10}л`;
 		tg.MainButton.show();
 	}
 	else {
-			tg.MainButton.setText(`Газ ${we*10}л`);
-			item = `Газ ${we*10}л`;
+			tg.MainButton.setText(`Вы выбрали ${we*10}л 95-Евро`);
+			item = `95-Евро ${we*10}л`;
+			tg.MainButton.show();
+		
+	}
+};
+// Кнопка 3 для 95-Puls
+function btn3(){
+	document.getElementById("txt3").innerHTML = `<p class="text">${we*10}л</p>`;
+	document.getElementById("btn_3").innerHTML='<input type="button" onclick="Minus3()" value="-" class="btn">' + '<input type="button" onclick="Plus3()" value="+" class="btn">';
+		if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Евро`);
+		item = `95-Евро ${er*10}л`;
+		tg.MainButton.show();
+	}
+};
+
+function Minus3(){
+	if (er> 1) {
+		er--
+		document.getElementById("txt3").innerHTML = `<p class="text">${er*10}л</p>`;
+		tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Евро`);
+		item = `95-Евро ${er*10}л`;
+		tg.MainButton.show();
+	}
+	else {
+		document.getElementById("btn_3").innerHTML='<input type="button" onclick="btn3()" value="Buy" class="btn">';
+		document.getElementById("txt3").innerHTML ="";
+		if (tg.MainButton.isVisible) {
+			tg.MainButton.hide();
+		}
+		else {
+			tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Евро`);
+			item = `95-Евро ${er*10}л`;
+			tg.MainButton.show();
+		}
+	}
+};
+function Plus3(){
+	if (er< 5){
+		er++
+		document.getElementById("txt3").innerHTML = `<p class="text">${er*10}л</p>`;
+		tg.MainButton.setText(`Газ ${er*10}л`);
+		item = `Газ ${er*10}л`;
+		tg.MainButton.show();
+	}
+	else {
+			tg.MainButton.setText(`Газ ${er*10}л`);
+			item = `Газ ${er*10}л`;
 			tg.MainButton.show();
 		
 	}
