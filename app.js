@@ -21,18 +21,17 @@ function btn1(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText(`Вы заплатите за ${qw*10}л Газа`);
+		tg.MainButton.setText(`Вы выбрали ${qw*10}л Газа`);
 		item = `Газ ${qw*10}л`;
 		tg.MainButton.show();
 	}
 };
 
-
 function Minus1(){
 	if (qw> 1) {
 		qw--
 		document.getElementById("txt1").innerHTML = `<p class="text">${qw*10}л</p>`;
-		tg.MainButton.setText(`Газ ${qw*10}л`);
+		tg.MainButton.setText(`Вы выбрали ${qw*10}л Газа`);
 		item = `Газ ${qw*10}л`;
 		tg.MainButton.show();
 	}
@@ -43,7 +42,7 @@ function Minus1(){
 			tg.MainButton.hide();
 		}
 		else {
-			tg.MainButton.setText(`Газ ${qw*10}л`);
+			tg.MainButton.setText(`Вы выбрали ${qw*10}л Газа`);
 			item = `Газ ${qw*10}л`;
 			tg.MainButton.show();
 		}
@@ -53,12 +52,12 @@ function Plus1(){
 	if (qw< 5){
 		qw++
 		document.getElementById("txt1").innerHTML = `<p class="text">${qw*10}л</p>`;
-		tg.MainButton.setText(`Газ ${qw*10}л`);
+		tg.MainButton.setText(`Вы выбрали ${qw*10}л Газа`);
 		item = `Газ ${qw*10}л`;
 		tg.MainButton.show();
 	}
 	else {
-			tg.MainButton.setText(`Газ ${qw*10}л`);
+			tg.MainButton.setText(`Вы выбрали ${qw*10}л Газа`);
 			item = `Газ ${qw*10}л`;
 			tg.MainButton.show();
 
@@ -73,8 +72,8 @@ function btn2(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText(`Газ ${we*10}л`);
-		item = `Газ ${we*10}л`;
+		tg.MainButton.setText(`Вы выбрали ${we*10}л 95-Евро`);
+		item = `95-Евро ${we*10}л`;
 		tg.MainButton.show();
 	}
 };
@@ -83,8 +82,8 @@ function Minus2(){
 	if (we> 1) {
 		we--
 		document.getElementById("txt2").innerHTML = `<p class="text">${we*10}л</p>`;
-		tg.MainButton.setText(`Газ ${we*10}л`);
-		item = `Газ ${we*10}л`;
+		tg.MainButton.setText(`Вы выбрали ${we*10}л 95-Евро`);
+		item = `95-Евро ${we*10}л`;
 		tg.MainButton.show();
 	}
 	else {
@@ -94,8 +93,8 @@ function Minus2(){
 			tg.MainButton.hide();
 		}
 		else {
-			tg.MainButton.setText(`Газ ${we*10}л`);
-			item = `Газ ${we*10}л`;
+			tg.MainButton.setText(`Вы выбрали ${we*10}л 95-Евро`);
+			item = `95-Евро ${we*10}л`;
 			tg.MainButton.show();
 		}
 	}
@@ -112,7 +111,6 @@ function Plus2(){
 			tg.MainButton.setText(`Газ ${we*10}л`);
 			item = `Газ ${we*10}л`;
 			tg.MainButton.show();
-
 		
 	}
 };
