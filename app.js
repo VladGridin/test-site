@@ -16,7 +16,7 @@ var ty = "1"
 
 function btn1(){
 	document.getElementById("txt1").innerHTML = `<p class="text">${qw*10}л</p>`;
-	document.getElementById("btn_1").innerHTML='<input type="button" onclick="Minus1()" value="-" class="btn">' + '<input type="button" onclick="Plus1()" value="+" class="btn">';
+	document.getElementById("btn_1").innerHTML='<input type="button" onclick="Minus1()" value="-" class="btn"><input type="button" onclick="Plus1()" value="+" class="btn">';
 		if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
@@ -67,7 +67,7 @@ function Plus1(){
 
 function btn2(){
 	document.getElementById("txt2").innerHTML = `<p class="text">${we*10}л</p>`;
-	document.getElementById("btn_2").innerHTML='<input type="button" onclick="Minus2()" value="-" class="btn">' + '<input type="button" onclick="Plus2()" value="+" class="btn">';
+	document.getElementById("btn_2").innerHTML='<input type="button" onclick="Minus2()" value="-" class="btn"><input type="button" onclick="Plus2()" value="+" class="btn">';
 		if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
@@ -117,7 +117,7 @@ function Plus2(){
 // Кнопка 3 для 95-Puls
 function btn3(){
 	document.getElementById("txt3").innerHTML = `<p class="text">${er*10}л</p>`;
-	document.getElementById("btn_3").innerHTML='<input type="button" onclick="Minus3()" value="-" class="btn">' + '<input type="button" onclick="Plus3()" value="+" class="btn">';
+	document.getElementById("btn_3").innerHTML='<input type="button" onclick="Minus3()" value="-" class="btn"><input type="button" onclick="Plus3()" value="+" class="btn">';
 		if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
@@ -160,6 +160,56 @@ function Plus3(){
 	else {
 			tg.MainButton.setText(`Вы выбрали 95-Puls ${er*10}л`);
 			item = `95-Puls ${er*10}л`;
+			tg.MainButton.show();
+		
+	}
+};
+// Кнопка 4 для ДП-Евро
+function btn4(){
+	document.getElementById("txt4").innerHTML = `<p class="text">${rt*10}л</p>`;
+	document.getElementById("btn_4").innerHTML=`<input type="button" onclick="Minus4()" value="-" class="btn"><input type="button" onclick="Plus4()" value="+" class="btn">`;
+		if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText(`Вы выбрали ${rt*10}л ДП-Евро`);
+		item = `ДП-Евро ${rt*10}л`;
+		tg.MainButton.show();
+	}
+};
+
+function Minus4(){
+	if (rt> 1) {
+		rt--
+		document.getElementById("txt4").innerHTML = `<p class="text">${rt*10}л</p>`;
+		tg.MainButton.setText(`Вы выбрали ${rt*10}л ДП-Евро`);
+		item = `ДП-Евро ${rt*10}л`;
+		tg.MainButton.show();
+	}
+	else {
+		document.getElementById("btn_4").innerHTML='<input type="button" onclick="btn4()" value="Buy" class="btn">';
+		document.getElementById("txt4").innerHTML ="";
+		if (tg.MainButton.isVisible) {
+			tg.MainButton.hide();
+		}
+		else {
+			tg.MainButton.setText(`Вы выбрали ${rt*10}л ДП-Евро`);
+			item = `ДП-Евро ${rt*10}л`;
+			tg.MainButton.show();
+		}
+	}
+};
+function Plus4(){
+	if (rt< 5){
+		rt++
+		document.getElementById("txt4").innerHTML = `<p class="text">${rt*10}л</p>`;
+		tg.MainButton.setText(`Вы выбрали ДП-Евро ${rt*10}л`);
+		item = `ДП-Евро ${rt*10}л`;
+		tg.MainButton.show();
+	}
+	else {
+			tg.MainButton.setText(`Вы выбрали ДП-Евро ${rt*10}л`);
+			item = `ДП-Евро ${rt*10}л`;
 			tg.MainButton.show();
 		
 	}
