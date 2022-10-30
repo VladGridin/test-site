@@ -24,7 +24,7 @@ body{
     border: none;
     background: rgb(248, 168, 24);
     border-radius: 10px;
-    color: #fff;
+    color: var(--tg-theme-text-color);
     text-transform: uppercase;
     font-weight: 700;
 
