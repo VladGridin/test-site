@@ -153,12 +153,12 @@ function Plus3(){
 	if (er< 5){
 		er++
 		document.getElementById("txt3").innerHTML = `<p class="text">${er*10}л</p>`;
-		tg.MainButton.setText(`Вы выбрали 95-Puls ${er*10}л`);
+		tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Puls`);
 		item = `95-Puls ${er*10}л`;
 		tg.MainButton.show();
 	}
 	else {
-			tg.MainButton.setText(`Вы выбрали 95-Puls ${er*10}л`);
+			tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Puls`);
 			item = `95-Puls ${er*10}л`;
 			tg.MainButton.show();
 		
@@ -203,12 +203,12 @@ function Plus4(){
 	if (rt< 5){
 		rt++
 		document.getElementById("txt4").innerHTML = `<p class="text">${rt*10}л</p>`;
-		tg.MainButton.setText(`Вы выбрали ДП-Евро ${rt*10}л`);
+		tg.MainButton.setText(`Вы выбрали ${rt*10}л ДП-Евро`);
 		item = `ДП-Евро ${rt*10}л`;
 		tg.MainButton.show();
 	}
 	else {
-			tg.MainButton.setText(`Вы выбрали ДП-Евро ${rt*10}л`);
+			tg.MainButton.setText(`Вы выбрали ${rt*10}л ДП-Евро`);
 			item = `ДП-Евро ${rt*10}л`;
 			tg.MainButton.show();
 		
@@ -253,7 +253,7 @@ function Plus5(){
 	if (ty< 5){
 		ty++
 		document.getElementById("txt5").innerHTML = `<p class="text">${ty*10}л</p>`;
-		tg.MainButton.setText(`Вы выбрали Дп-pulls ${ty*10}л`);
+		tg.MainButton.setText(`Вы выбрали ${ty*10}л Дп-pulls`);
 		item = `Дп-pulls ${ty*10}л`;
 		tg.MainButton.show();
 	}
