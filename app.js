@@ -122,8 +122,8 @@ function btn3(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Евро`);
-		item = `95-Евро ${er*10}л`;
+		tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Puls`);
+		item = `95-Puls ${er*10}л`;
 		tg.MainButton.show();
 	}
 };
@@ -132,8 +132,8 @@ function Minus3(){
 	if (er> 1) {
 		er--
 		document.getElementById("txt3").innerHTML = `<p class="text">${er*10}л</p>`;
-		tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Евро`);
-		item = `95-Евро ${er*10}л`;
+		tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Puls`);
+		item = `95-Puls ${er*10}л`;
 		tg.MainButton.show();
 	}
 	else {
@@ -143,8 +143,8 @@ function Minus3(){
 			tg.MainButton.hide();
 		}
 		else {
-			tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Евро`);
-			item = `95-Евро ${er*10}л`;
+			tg.MainButton.setText(`Вы выбрали ${er*10}л 95-Puls`);
+			item = `95-Puls ${er*10}л`;
 			tg.MainButton.show();
 		}
 	}
@@ -153,13 +153,13 @@ function Plus3(){
 	if (er< 5){
 		er++
 		document.getElementById("txt3").innerHTML = `<p class="text">${er*10}л</p>`;
-		tg.MainButton.setText(`Газ ${er*10}л`);
-		item = `Газ ${er*10}л`;
+		tg.MainButton.setText(`95-Puls ${er*10}л`);
+		item = `95-Puls ${er*10}л`;
 		tg.MainButton.show();
 	}
 	else {
-			tg.MainButton.setText(`Газ ${er*10}л`);
-			item = `Газ ${er*10}л`;
+			tg.MainButton.setText(`95-Puls ${er*10}л`);
+			item = `95-Puls ${er*10}л`;
 			tg.MainButton.show();
 		
 	}
