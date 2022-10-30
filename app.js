@@ -28,7 +28,7 @@ function btn1(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 1!");
+		tg.MainButton.setText(`Газ ${qw*10}л`);
 		item = `Газ ${qw*10}л`;
 		tg.MainButton.show();
 	}
