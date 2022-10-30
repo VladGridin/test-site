@@ -153,12 +153,12 @@ function Plus3(){
 	if (er< 5){
 		er++
 		document.getElementById("txt3").innerHTML = `<p class="text">${er*10}л</p>`;
-		tg.MainButton.setText(`95-Puls ${er*10}л`);
+		tg.MainButton.setText(`Вы выбрали 95-Puls ${er*10}л`);
 		item = `95-Puls ${er*10}л`;
 		tg.MainButton.show();
 	}
 	else {
-			tg.MainButton.setText(`95-Puls ${er*10}л`);
+			tg.MainButton.setText(`Вы выбрали 95-Puls ${er*10}л`);
 			item = `95-Puls ${er*10}л`;
 			tg.MainButton.show();
 		
