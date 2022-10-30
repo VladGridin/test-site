@@ -74,14 +74,10 @@ function Plus(){
 		tg.MainButton.show();
 	}
 	else {
-		if (tg.MainButton.isVisible) {
-			tg.MainButton.hide();
-		}
-		else {
 			tg.MainButton.setText(`Газ ${qw*10}л`);
 			item = `Газ ${qw*10}л`;
 			tg.MainButton.show();
-		}
+		
 	}
 };
 
