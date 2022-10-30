@@ -214,6 +214,57 @@ function Plus4(){
 		
 	}
 };
+//5
+function btn5(){
+	document.getElementById("txt5").innerHTML = `<p class="text">${rt*10}л</p>`;
+	document.getElementById("btn_5").innerHTML=`<input type="button" onclick="Minus5()" value="-" class="btn"><input type="button" onclick="Plus5()" value="+" class="btn">`;
+		if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText(`Вы выбрали ${ty*10}л Дп-pulls`);
+		item = `Дп-pulls ${ty*10}л`;
+		tg.MainButton.show();
+	}
+};
+
+function Minus5(){
+	if (ty> 1) {
+		ty--
+		document.getElementById("txt5").innerHTML = `<p class="text">${ty*10}л</p>`;
+		tg.MainButton.setText(`Вы выбрали ${ty*10}л Дп-pulls`);
+		item = `Дп-pulls ${ty*10}л`;
+		tg.MainButton.show();
+	}
+	else {
+		document.getElementById("btn_5").innerHTML='<input type="button" onclick="btn5()" value="Buy" class="btn">';
+		document.getElementById("txt5").innerHTML ="";
+		if (tg.MainButton.isVisible) {
+			tg.MainButton.hide();
+		}
+		else {
+			tg.MainButton.setText(`Вы выбрали ${ty*10}л Дп-pulls`);
+			item = `Дп-pulls ${ty*10}л`;
+			tg.MainButton.show();
+		}
+	}
+};
+function Plus5(){
+	if (ty< 5){
+		ty++
+		document.getElementById("txt5").innerHTML = `<p class="text">${ty*10}л</p>`;
+		tg.MainButton.setText(`Вы выбрали Дп-pulls ${ty*10}л`);
+		item = `Дп-pulls ${ty*10}л`;
+		tg.MainButton.show();
+	}
+	else {
+			tg.MainButton.setText(`Вы выбрали Дп-pulls ${ty*10}л`);
+			item = `Дп-pulls ${ty*10}л`;
+			tg.MainButton.show();
+		
+	}
+};
+
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	tg.sendData(item);
