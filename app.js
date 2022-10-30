@@ -21,7 +21,7 @@ function btn1(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText(`Газ ${qw*10}л`);
+		tg.MainButton.setText(`Вы заплатите за ${qw*10}л Газа`);
 		item = `Газ ${qw*10}л`;
 		tg.MainButton.show();
 	}
