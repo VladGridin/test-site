@@ -51,6 +51,9 @@ function Minus(){
 	if (qw> 1) {
 		qw--
 		document.getElementById("txt1").innerHTML = `<p class="text">${qw*10}л</p>`;
+		tg.MainButton.setText(`Газ ${qw*10}л`);
+		item = `Газ ${qw*10}л`;
+		tg.MainButton.show();
 	}
 	else {
 		document.getElementById("btn_1").innerHTML='<input type="button" onclick="btn1()" value="Buy" class="btn">';
@@ -77,6 +80,7 @@ function Plus(){
 			tg.MainButton.setText(`Газ ${qw*10}л`);
 			item = `Газ ${qw*10}л`;
 			tg.MainButton.show();
+
 		
 	}
 };
