@@ -116,7 +116,7 @@ function Plus2(){
 };
 // Кнопка 3 для 95-Puls
 function btn3(){
-	document.getElementById("txt3").innerHTML = `<p class="text">${we*10}л</p>`;
+	document.getElementById("txt3").innerHTML = `<p class="text">${er*10}л</p>`;
 	document.getElementById("btn_3").innerHTML='<input type="button" onclick="Minus3()" value="-" class="btn">' + '<input type="button" onclick="Plus3()" value="+" class="btn">';
 		if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
